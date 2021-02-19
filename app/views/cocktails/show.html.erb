@@ -1,5 +1,11 @@
 <h1><%= @cocktail.name %></h1>
 
+<% if @cocktail.photo.attached? %>
+    <%= cl_image_tag @cocktail.photo.key, width: 600 %>
+<% else %>
+    <%= image_tag Cocktail::DEFAULT_IMAGE_URL , alt: @cocktail.name, width: 600 %>
+<% end %>
+
 <ul>
   <% @cocktail.doses.each do |dose| %>
     <li>
