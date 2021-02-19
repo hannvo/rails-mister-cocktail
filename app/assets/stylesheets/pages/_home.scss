@@ -1,1 +1,6 @@
 // Specific CSS for your home-page
+.grid-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

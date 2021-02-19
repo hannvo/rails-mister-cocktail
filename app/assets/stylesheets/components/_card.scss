@@ -1,0 +1,12 @@
+.card-cocktail {
+  border-radius: $border-radius;
+  background-color: $gray;
+  width: 250px;
+  margin: 8px;
+
+  img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+}

@@ -13,3 +13,11 @@
 @import "pages/index";
 
 @import "cocktails.scss";
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px $orange;
+  color: $green;
+}
