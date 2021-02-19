@@ -1,4 +1,7 @@
-<h1>New Cocktail</h1>
+<div class="navbar-lewagon my-3">
+  <h1 class="m-0">New Cocktail</h1>
+  <%= link_to 'Back', cocktails_path, class: "btn btn-outline-success" %>
+</div>
 
 <%= simple_form_for @cocktail do |f| %>
   <%= f.input :name %>

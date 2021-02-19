@@ -1,4 +1,7 @@
-<h1>Add new ingredient to <%= @cocktail.name %> </h1>
+<div class="navbar-lewagon my-3">
+  <h1 class="m-0">Add ingredient to <%= @cocktail.name %></h1>
+  <%= link_to 'Back', cocktails_path, class: "btn btn-outline-success" %>
+</div>
 
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :description %>
